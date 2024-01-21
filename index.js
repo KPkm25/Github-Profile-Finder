@@ -3,6 +3,7 @@ const CLIENT_SECRET = '214103bdd53b3e95841df77aa0c82c5ff2c0c8db';
 const REPOS_PER_PAGE_DEFAULT = 10;
 const MAX_REPOS_PER_PAGE = 100;
 
+
 async function getUser(name) {
   const res = await fetch(`https://api.github.com/users/${name}?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`);
   const profile = await res.json();
