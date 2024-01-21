@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>ProFinder | Programming With Ariyan</title>
+  </head>
+  <body>
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div class="container">
+      <nav>
+        <div>
+          <ion-icon name="logo-github"></ion-icon>
+          <p>ProFinder</p>
+        </div>
+      </nav>
+
+      <div class="search-users">
+        <form id="search">
+          <div class="search-users__input">
+            <input
+              type="text"
+              name="username"
+              id="findByUsername"
+              placeholder="Search github profiles here..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="search-users__submit">
+            <button>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="notFound" style="display: none;">
+        <h1>User not found</h1>
+      </div>
+
+      <div class="user-details" style="display:none">
+        <div class="profile">
+          
+        </div>
+        <div class="repositories">
+          <div class="repositories__heading">
+            <h2>Repositories</h2>
+            <label for="reposPerPage">Repositories per Page:</label>
+            <select id="reposPerPage">
+              <option value="10" selected>10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <div class="repos">
+          
+          </div>
+          <div class="pagination">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
